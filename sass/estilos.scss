@@ -1,0 +1,239 @@
+// Todo hecho para la pagina index
+
+$colorUno: #e4ff00;
+$colorDos: #0a1122;
+$colorTres: #7070704f;
+$colorCuatro: #fff;
+
+*{
+    margin: 0;
+    padding: 0;
+    ::selection{
+        background-color: $colorUno;
+        color: $colorDos;
+    }
+}
+
+.navbar{
+    background-color: $colorUno;
+    a{
+        color: $colorDos;
+        img{
+            width: 35px;
+        }
+    }
+}
+
+.nav-link:hover{
+    color: $colorDos !important;
+}
+
+.jumbotron{
+    height: 200px;
+    background-image: url(../img/trainstation.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0;
+    border-radius: 0;
+    text-align: center;
+    img{
+        width: 300px;
+    }
+}
+
+.sec1{
+    height: 30%;
+    background-color: $colorDos;
+    display: grid;
+    grid-template-rows: 50px 100px;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0;
+    border-bottom: 1px solid #e4ff00;
+    img{
+        height: 60px;
+        margin-bottom: 30px;
+    }
+}
+
+.divP{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15x;
+    background-color: $colorTres;
+    p{
+        color: $colorCuatro;
+        b{
+            color: $colorUno;
+        }
+    }
+}
+
+.sec2{
+    height: 40%;
+    display: grid;
+    grid-template-rows: 50px auto;
+    align-items: center;
+    justify-items: center;
+    background-color: $colorDos;
+    border-bottom: 1px solid $colorUno;
+    h2{
+        color: $colorUno;
+        padding: 20px auto;
+    }
+}
+
+.productosDestacados{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .divCompra{
+        text-align: center;
+        background-color: $colorTres;
+        padding: 5px;
+        border-radius: 3px;
+        margin: 20px;
+        img{
+            width: 100px;
+            border: 2px solid $colorUno;
+            border-radius: 3px;
+        }
+        .p1{
+            color: $colorCuatro;
+        }
+        
+        .p2{
+            color: $colorUno;
+        }
+        button{
+            background-color: $colorUno;
+        }
+    }
+}
+
+.sec3{
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 2px solid $colorDos;
+    background-color: $colorUno;
+    .logoFoot img{
+        width: 50px;
+    }
+    .socialDiv{
+        text-align: center;
+        h3{
+            font-size: 1.5rem;
+        }
+        h4{
+            font-size: 1rem;
+        }
+        .socialImg img{
+            width: 30px;
+        }
+    }
+}
+
+/* ------------------MEDIA QUERI------------------ */
+
+@media only screen and (min-width: 640px){
+    /* footer */
+    .sec3{
+        height: 10%;
+        .logoFoot img{
+            width: 70px;
+        }
+        .socialDiv h3{
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+        .socialDiv h4{
+            margin-top: 10px;
+        }
+        .socialImg img{
+            width: 40px;
+        }
+    }
+}
+
+@media only screen and (min-width: 960px){
+    /* seccion 1 */
+    .sec1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: none;
+        gap: 0;
+        height: 200px;
+        img{
+            height: 100px;
+        }
+        .divP{
+            font-size: 20px;
+        }
+    }
+
+    /* seccion 2 */
+    .sec2{
+        height: 500px;
+        grid-template-rows: 100px auto;
+        h2{
+            font-size: 30px;
+            padding-top: 30px;
+        }
+        .divCompra img{
+            width: 150px;
+        }
+    }
+    
+}
+
+@media only screen and (min-width: 1280px){
+    /* seccion 1 */
+    .sec1{
+        height: 300px;
+        img{
+            height: 150px;
+        }
+        .divP{
+            font-size: 28px;
+        }
+    }
+
+    /* seccion 2 */
+    .sec2{
+        height: 500px;
+        grid-template-rows: 100px auto;
+        h2{
+            font-size: 40px;
+            padding-top: 30px;
+        }
+        .divCompra{
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            img{
+                width: 180px;
+            }
+            button{
+                font-size: 18px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1920px){
+
+    /* seccion 1 */
+    .sec1{
+        height: 300px;
+        img{
+            height: 180px;
+        }
+        .divP{
+            font-size: 28px;
+        }
+    }
+}

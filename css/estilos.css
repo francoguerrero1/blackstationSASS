@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+* ::selection {
+  background-color: #e4ff00;
+  color: #0a1122;
+}
+
+.navbar {
+  background-color: #e4ff00;
+}
+.navbar a {
+  color: #0a1122;
+}
+.navbar a img {
+  width: 35px;
+}
+
+.nav-link:hover {
+  color: #0a1122 !important;
+}
+
+.jumbotron {
+  height: 200px;
+  background-image: url(../img/trainstation.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 0;
+  border-radius: 0;
+  text-align: center;
+}
+.jumbotron img {
+  width: 300px;
+}
+
+.sec1 {
+  height: 30%;
+  background-color: #0a1122;
+  display: grid;
+  grid-template-rows: 50px 100px;
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 0;
+  border-bottom: 1px solid #e4ff00;
+}
+.sec1 img {
+  height: 60px;
+  margin-bottom: 30px;
+}
+
+.divP {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 15x;
+  background-color: #7070704f;
+}
+.divP p {
+  color: #fff;
+}
+.divP p b {
+  color: #e4ff00;
+}
+
+.sec2 {
+  height: 40%;
+  display: grid;
+  grid-template-rows: 50px auto;
+  align-items: center;
+  justify-items: center;
+  background-color: #0a1122;
+  border-bottom: 1px solid #e4ff00;
+}
+.sec2 h2 {
+  color: #e4ff00;
+  padding: 20px auto;
+}
+
+.productosDestacados {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.productosDestacados .divCompra {
+  text-align: center;
+  background-color: #7070704f;
+  padding: 5px;
+  border-radius: 3px;
+  margin: 20px;
+}
+.productosDestacados .divCompra img {
+  width: 100px;
+  border: 2px solid #e4ff00;
+  border-radius: 3px;
+}
+.productosDestacados .divCompra .p1 {
+  color: #fff;
+}
+.productosDestacados .divCompra .p2 {
+  color: #e4ff00;
+}
+.productosDestacados .divCompra button {
+  background-color: #e4ff00;
+}
+
+.sec3 {
+  height: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 2px solid #0a1122;
+  background-color: #e4ff00;
+}
+.sec3 .logoFoot img {
+  width: 50px;
+}
+.sec3 .socialDiv {
+  text-align: center;
+}
+.sec3 .socialDiv h3 {
+  font-size: 1.5rem;
+}
+.sec3 .socialDiv h4 {
+  font-size: 1rem;
+}
+.sec3 .socialDiv .socialImg img {
+  width: 30px;
+}
+
+/* ------------------MEDIA QUERI------------------ */
+@media only screen and (min-width: 640px) {
+  /* footer */
+  .sec3 {
+    height: 10%;
+  }
+  .sec3 .logoFoot img {
+    width: 70px;
+  }
+  .sec3 .socialDiv h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .sec3 .socialDiv h4 {
+    margin-top: 10px;
+  }
+  .sec3 .socialImg img {
+    width: 40px;
+  }
+}
+@media only screen and (min-width: 960px) {
+  /* seccion 1 */
+  .sec1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+    gap: 0;
+    height: 200px;
+  }
+  .sec1 img {
+    height: 100px;
+  }
+  .sec1 .divP {
+    font-size: 20px;
+  }
+
+  /* seccion 2 */
+  .sec2 {
+    height: 500px;
+    grid-template-rows: 100px auto;
+  }
+  .sec2 h2 {
+    font-size: 30px;
+    padding-top: 30px;
+  }
+  .sec2 .divCompra img {
+    width: 150px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  /* seccion 1 */
+  .sec1 {
+    height: 300px;
+  }
+  .sec1 img {
+    height: 150px;
+  }
+  .sec1 .divP {
+    font-size: 28px;
+  }
+
+  /* seccion 2 */
+  .sec2 {
+    height: 500px;
+    grid-template-rows: 100px auto;
+  }
+  .sec2 h2 {
+    font-size: 40px;
+    padding-top: 30px;
+  }
+  .sec2 .divCompra {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .sec2 .divCompra img {
+    width: 180px;
+  }
+  .sec2 .divCompra button {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  /* seccion 1 */
+  .sec1 {
+    height: 300px;
+  }
+  .sec1 img {
+    height: 180px;
+  }
+  .sec1 .divP {
+    font-size: 28px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

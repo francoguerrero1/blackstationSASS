@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/bs-index.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stylesbs.css">
+    <title>BlackStation</title>
+</head>
+<body>
+    <header id="volverInicio">
+        <div class="jumbotron">
+            <img src="img/blackstation-index.png" alt="logoheader">
+        </div>
+        <nav class="navbar navbar-expand-md">
+            <!-- Brand -->
+            <a class="navbar-brand" href="index.html">
+                <img src="img/bs-index.png" alt="bslogo">
+            </a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">PRODUCTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="biografias.html">BIOGRAFIAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mas-informacion.html">INFO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">CONTACTO</a>
+                    </li>
+                    <form class="form-inline" action="/action_page.php">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Buscar">
+                        <button class="btn btn-success" type="submit">Buscar</button>
+                    </form>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="mainContacto">
+        <div class="container">
+            <h1>Contactame</h1>
+                <form class="formulario">
+                    <label for="nombre">Nombre</label>
+                            <input type="text" placeholder="Tu nombre..." class="introducir">
+                    <label for="apellido">Apellido</label>
+                        <input type="text" placeholder="Tu apellido..." class="introducir">
+                    <label for="Email">Email</label>
+                        <input type="email" placeholder="Tu email..." required class="introducir">
+                    <label for="sexo">Sexo</label>
+                        <select name="sexo" class="selectBoton">
+                            <option value="hombre">Hombre</option>
+                            <option value="mujer">Mujer</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    <label for="pais">Pais</label>
+                        <select name="pais" class="selectBoton">
+                            <option value="argentina">Argentina</option>
+                            <option value="brasil">Brasil</option>
+                            <option value="chile">Chile</option>
+                            <option value="peru">Peru</option>
+                            <option value="uruguay">Uruguay</option>
+                        </select>    
+                    <label for="mensaje" class="labelText">Mensaje</label>
+                        <textarea placeholder="Escribe tu mensaje aqui..."
+                        class="introText"></textarea>
+                        <input type="submit" value="Enviar" class="botonEnviar">
+                </form>
+        </div>
+    </main>
+    <footer>
+        <section class="sec3">
+            <div class="logoFoot">
+                <a href="#volverInicio"><img src="img/bs-index.png" alt="bs-logo"></a>
+            </div>
+            <div class="socialDiv">
+                <h3>Social Media</h3>
+                    <div class="socialImg">
+                        <a href="https://www.facebook.com/luzbelito.guerrero/" target="_blank">
+                            <img src="img/fbicon.png" alt="fbicon">
+                        </a>
+                        <a href="https://www.instagram.com/blackmdq/" target="_blank">
+                            <img src="img/igicon.png" alt="igicon">
+                        </a>
+                        <a href="https://twitter.com/blackmdq_" target="_blank">
+                            <img src="img/twicon.png" alt="twicon">
+                        </a>
+                        <a href="https://github.com/blackfran" target="_blank">
+                            <img src="img/giticon.png" alt="github">
+                        </a>
+                    </div>
+                <h4>© Todos los derechos reservados.</h4>
+            </div>
+        </section>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+    </script>
+</body>
+</html>

@@ -1,0 +1,598 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+*::selection{
+    background-color: #e4ff00;
+    color: #0a1122;
+}
+.navbar{
+    background-color: #e4ff00;
+}
+.navbar a{
+    color: #0a1122;
+}
+.navbar-brand img{
+    width: 35px;
+}
+.nav-link:hover{
+    color: #0a1122 !important;
+}
+.jumbotron{
+    height: 200px;
+    background-image: url(../img/trainstation.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0;
+    border-radius: 0;
+    text-align: center;
+}
+.jumbotron img{
+    width: 300px;
+}
+
+/* Main */
+/* seccion1 */
+.sec1{
+    height: 30%;
+    background-color: #0a1122;
+    display: grid;
+    grid-template-rows: 50px 100px;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0;
+    border-bottom: 1px solid #e4ff00;
+}
+
+.sec1 img{
+    height: 60px;
+    margin-bottom: 30px;
+}
+
+.divP{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15x;
+    background-color: #7070704f;
+}
+
+.divP p{
+    color: #fff;
+}
+
+.divP b{
+    color: #e4ff00;
+}
+
+/* seccion2 */
+
+/* seccion productos destacados */
+.sec2{
+    height: 40%;
+    display: grid;
+    grid-template-rows: 50px auto;
+    align-items: center;
+    justify-items: center;
+    background-color: #0a1122;
+    border-bottom: 1px solid #e4ff00;
+}
+
+.sec2 h2{
+    color: #e4ff00;
+    padding: 20px auto;
+}
+
+.productosDestacados{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.divCompra{
+    text-align: center;
+    background-color: #7070704f;
+    padding: 5px;
+    border-radius: 3px;
+    margin: 20px;
+}
+
+.divCompra img{
+    width: 100px;
+    border: 2px solid #e4ff00;
+    border-radius: 3px;
+}
+
+.p1{
+    color: #fff;
+}
+
+.p2{
+    color: #e4ff00;
+}
+
+.divCompra button{
+    background-color: #e4ff00;
+}
+
+/*------------------- SECCION PAGINA PRODUCTOS------------------------ */
+.secProd{
+    height: 70%;
+    display: grid;
+    grid-template-rows: 100px 3550px;
+    background-color: #0a1122;
+}
+.productosTitulo{
+    text-align: center;
+    padding-top: 30px;
+}
+.productosTitulo h1{
+    font-size: 2rem;
+    color: #e4ff00;
+}
+
+.artProductos{
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+.productos{
+    background-color: #7070704f;
+    padding: 10px;
+    border-radius: 3px;
+    margin: 20px;
+}
+
+.productos img{
+    width: 100px;
+    border: 2px solid #e4ff00;
+    border-radius: 3px;
+}
+
+.p1{
+    color: #fff;
+}
+
+.p2{
+    color: #e4ff00;
+}
+
+.productos button{
+    background-color: #e4ff00;
+}
+
+
+/* ----------SECCION PAGINA BIOGRAFIAS-------------------------- */
+.mainBio{
+    height: 70%;
+}
+.bioTitulo{
+    text-align: center;
+    color: #e4ff00;
+    background-color: #0a1122;
+    margin: 0;
+    padding-top: 10px;
+}
+.secBio{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    background-color: #0a1122;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+.bio{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    border-bottom: 1px solid #e4ff00;
+}
+.bio img{
+    width: 150px;
+    border: 2px solid #e4ff00;
+    margin-top: 30px;
+}
+.bio p{
+    color: #fff;
+    background-color: #7070704f;
+    margin: 15px;
+    border-radius: 3px;
+    padding: 5px;
+}
+.bio b{
+    color: #e4ff00;
+}
+
+
+
+
+/* -----------------SECCION PAGINA MAS INFORMACION--------------- */
+.miPresentacion{
+    height: 70%;
+    display: grid;
+    grid-template-rows: 70px 250px 3fr;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    background-color: #0a1122;
+    border-bottom: 2px solid #e4ff00;
+}
+.miPresentacion h1{
+    font-size: 28px;
+    color: #e4ff00;
+    padding-top: 20px;
+}
+.parrafoPresentacion{
+    padding: 20px;
+}
+.parrafoPresentacion p{
+    color: #fff;
+    background-color: #7070704f;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.parrafoPresentacion strong{
+    color: #e4ff00;
+}
+.parrafoPresentacion b{
+    color: #e4ff00;
+}
+.imgPresentacion{
+    padding-top: 30px;
+    padding-bottom: 43px;
+}
+.imgPresentacion img{
+    width: 250px;
+    border: 2px solid #e4ff00;
+    border-radius: 5px;
+}
+
+/* -------------SECCION PAGINA CONTACTO----------------- */
+.mainContacto{
+    background-color: #0a1122;
+}
+.container{
+    height: 70%;
+    display: grid;
+    grid-template-rows: 150px 500px;
+    align-items: center;
+    justify-items: center;
+    background-color: #0a1122;
+    color: #e4ff00;
+}
+
+.container h1{
+    padding-bottom: 20px;
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 8(1fr);
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+    background-color: #7070704f;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.introducir{
+    width: 150px;
+    color: #fff;
+    background-color: #0a1122;
+    border: 1px solid #e4ff00;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+.selectBoton{
+    width: 150px;
+    color: #fff;
+    background-color: #0a1122;
+    border: 1px solid #e4ff00;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+.labelText{
+    grid-column: -3/-1;
+}
+.introText{
+    grid-column: -3/-1;
+    height: 100px;
+    width: 250px;
+    color: #fff;
+    background-color: #0a1122;
+    border: 1px solid #e4ff00;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.botonEnviar{
+    grid-column: -1/-3;
+    width: 100px;
+    color: #fff;
+    background-color: #0a1122;
+    border: 1px solid #e4ff00;
+    border-radius: 5px;
+}
+
+/* Footer */
+.sec3{
+    height: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 2px solid #0a1122;
+    background-color: #e4ff00;
+}
+
+.logoFoot img{
+    width: 50px;
+}
+
+.socialDiv{
+    text-align: center;
+}
+.socialDiv h3{
+    font-size: 1.5rem;
+}
+.socialDiv h4{
+    font-size: 1rem;
+}
+.socialImg img{
+    width: 30px;
+}
+
+/* ------------------MEDIA QUERI------------------ */
+
+@media only screen and (min-width: 640px){
+    /* footer */
+    .sec3{
+        height: 10%;
+    }
+    
+    .logoFoot img{
+        width: 70px;
+    }
+    
+    .socialDiv h3{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .socialDiv h4{
+        margin-top: 10px;
+    }
+    .socialImg img{
+        width: 40px;
+    }
+
+    /* ---------PAGINA MAS INFORMACION------- */
+    .miPresentacion{
+        grid-template-rows: 90px 150px 3fr;
+    }
+    .parrafoPresentacion{
+        padding: 0;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .imgPresentacion{
+        padding-bottom: 39px;
+    }
+    .imgPresentacion img{
+        width: 300px;
+    }
+
+    /* -----PAGINA PRODUCTOS--------- */
+    .secProd{
+        grid-template-rows: 100px 1800px;
+    }
+    .artProductos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+
+    /*-----------PAGINA BIOGRAFIAS----------  */
+    .bio p{
+        margin: 20px 100px;
+    }
+}
+
+
+@media only screen and (min-width: 960px){
+    /* seccion 1 */
+    .sec1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: none;
+        gap: 0;
+        height: 200px;
+    }
+    .sec1 img{
+        height: 100px;
+    }
+    .divP{
+        font-size: 20px;
+    }
+
+    /* seccion 2 */
+    .sec2{
+        height: 500px;
+        grid-template-rows: 100px auto;
+    }
+    .sec2 h2{
+        font-size: 30px;
+        padding-top: 30px;
+    }
+    .divCompra img{
+        width: 150px;
+    }
+    /* --------PAGINA PRODUCTOS------ */
+    .secProd{
+        grid-template-rows: 100px 900px;
+    }
+    .artProductos{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    /* --------PAGINA BIOGRAFIAS---------- */
+
+    .bio{
+        display: grid;
+        grid-template-rows: none;
+        grid-template-columns:  1fr 2fr;
+        align-items: center;
+    }
+    .bio img{
+        width: 150px;
+        border: 2px solid #e4ff00;
+        margin: 40px auto;
+    }
+    .bio p{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1280px){
+    /* seccion 1 */
+    .sec1{
+        height: 300px;
+    }
+    .sec1 img{
+        height: 150px;
+    }
+    .divP{
+        font-size: 28px;
+    }
+
+    /* seccion 2 */
+    .sec2{
+        height: 500px;
+        grid-template-rows: 100px auto;
+    }
+    .sec2 h2{
+        font-size: 40px;
+        padding-top: 30px;
+    }
+    .divCompra{
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .divCompra img{
+        width: 180px;
+    }
+    .divCompra button{
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    /* --------PAGINA MAS INFORMACION-------- */
+    .miPresentacion{
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 200px 400px;
+    }
+    .miPresentacion h1{
+        font-size: 40px;
+        padding-top: 100px;
+    }
+    .parrafoPresentacion{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding: 0;
+        padding-right: 150px;
+        padding-left: 150px;
+        padding-bottom: 50px;
+    }
+    .parrafoPresentacion p{
+        font-size: 25px;
+    }
+    .imgPresentacion{
+        grid-column: 2/3;
+        grid-row: 1/3;
+        padding-top: 40px;
+        padding-right: 100px;
+    }
+    .imgPresentacion img{
+        width: 400px;
+    }
+
+    /* ------------PAGINA CONTACTO---------- */
+    .container{
+        grid-template-rows: 150px 700px;
+    }
+    .container h1{
+        font-size: 40px;
+        padding: 0;
+        margin: 0;
+    }
+    .formulario{
+        font-size: 20px;
+        padding: 30px;
+        gap: 25px;
+    }
+    .introducir{
+        height: 25px;
+        font-size: 17px;
+    }
+    .selectBoton{
+        height: 25px;
+        font-size: 17px;
+    }
+    .introText{
+        height: 200px;
+        width: 300px;
+        font-size: 17px;
+    }
+    .botonEnviar{
+        height: 25px;
+        font-size: 17px;
+    }
+
+    /* --------PAGINA PRODUCTOS------ */
+    .secProd{
+        grid-template-rows: 100px 1050px;
+    }
+    .productos img{
+        width: 150px;
+    }
+}
+
+@media only screen and (min-width: 1920px){
+
+    /* seccion 1 */
+    .sec1{
+        height: 300px;
+    }
+    .sec1 img{
+        height: 180px;
+    }
+    .divP{
+        font-size: 28px;
+    }
+    /* ---------PAGINA MAS INFORMACION-------- */
+    .miPresentacion h1{
+        padding-top: 100px;
+    }
+    .imgPresentacion{
+        padding-top: 40px;
+        padding-right: 100px;
+    }
+    .imgPresentacion img{
+        width: 400px;
+    }
+}
