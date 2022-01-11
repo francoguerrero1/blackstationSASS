@@ -1,9 +1,40 @@
 // Todo hecho para la pagina index
+@mixin productosDestacados{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .divCompra{
+        text-align: center;
+        background-color: $colorTres;
+        padding: 5px;
+        border-radius: 3px;
+        margin: 20px;
+        img{
+            width: 100px;
+            border: 2px solid $colorUno;
+            border-radius: 3px;
+        }
+        .p1{
+            color: $colorCuatro;
+        }
+        
+        .p2{
+            color: $colorUno;
+        }
+        button{
+            background-color: $colorUno;
+        }
+    }
+}
 
 $colorUno: #e4ff00;
 $colorDos: #0a1122;
 $colorTres: #7070704f;
 $colorCuatro: #fff;
+
+html{
+    scroll-behavior: smooth;
+}
 
 *{
     margin: 0;
@@ -64,7 +95,7 @@ $colorCuatro: #fff;
     background-color: $colorTres;
     p{
         color: $colorCuatro;
-        b{
+        strong{
             color: $colorUno;
         }
     }
@@ -85,31 +116,7 @@ $colorCuatro: #fff;
 }
 
 .productosDestacados{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    .divCompra{
-        text-align: center;
-        background-color: $colorTres;
-        padding: 5px;
-        border-radius: 3px;
-        margin: 20px;
-        img{
-            width: 100px;
-            border: 2px solid $colorUno;
-            border-radius: 3px;
-        }
-        .p1{
-            color: $colorCuatro;
-        }
-        
-        .p2{
-            color: $colorUno;
-        }
-        button{
-            background-color: $colorUno;
-        }
-    }
+    @include productosDestacados
 }
 
 .sec3{
